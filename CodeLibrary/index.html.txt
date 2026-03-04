@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Osman's Home Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: white;
+        position: relative;
+
+        background-image: url('eagle.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* DIM OVERLAY (this fades the picture) */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);  
+        z-index: -1;                    
+    }
+
+    h1 {
+        margin-top: 40px;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    /* Links box */
+    .links {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 25px 40px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+    }
+
+    .links a {
+        display: block;
+        text-decoration: none;
+        color: #ffcc00;
+        font-size: 20px;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+
+    .links a:hover {
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Osman's Home Page</h1>
+
+<div class="links">
+    <a href="basic.php">Basic PHP</a>
+    <a href="config.php">Config</a>
+    <a href="hw2.html">What's Your Name Form</a>
+    <a href="hw4.html">Testing Strings</a>
+    <a href="Costumer_form.php">Customer Form</a>
+    <a href="bands.php">Favorite Bands</a>
+    <a href="connect.php">Database Connection Test</a>
+    <a href="hw7.html">Sign Change Form</a>
+    <a href="hw8.html">Convert Form</a>
+    <a href="customer_list4.php">Customer List</a>
+    <a href="customer_update3.php?action=a">Customer Update</a>
+    
+</div>
+
+</body>
+</html>
